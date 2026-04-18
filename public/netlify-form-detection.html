@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Form detection</title></head>
+  <body>
+    <!--
+      This file exists solely so Netlify can detect the contact form at build time.
+      The real form lives at /contact and is submitted via JavaScript fetch.
+      Notifications are sent to luke@dealspark.io — configure in Netlify dashboard
+      under Forms > contact > Form notifications.
+    -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text"     name="name" />
+      <input type="text"     name="company" />
+      <input type="email"    name="email" />
+      <textarea              name="goals"></textarea>
+    </form>
+  </body>
+</html>
