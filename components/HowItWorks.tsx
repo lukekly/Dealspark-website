@@ -94,15 +94,6 @@ export default function HowItWorks() {
                 <p className="text-white/55 text-sm leading-relaxed">
                   {step.description}
                 </p>
-                {step.number === '01' && (
-                  <div className="mt-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs text-white/30 font-medium"
-                    style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-                    </svg>
-                    Clay-powered prospecting
-                  </div>
-                )}
               </article>
             </AnimatedSection>
           ))}
