@@ -22,7 +22,7 @@ const comingSoon = [
     sector: 'Technical Recruitment',
     headline: 'Consistent Client Pipeline',
     description:
-      'A technical recruitment firm needed to reach both hiring managers and senior engineering talent simultaneously. DealSpark built separate outbound tracks for each persona, running independent multichannel campaigns to each audience.',
+      'A technical recruitment firm were expanding the business in a new market. DealSpark built separate outbound tracks for each persona, running independent multichannel campaigns to each audience.',
   },
 ];
 

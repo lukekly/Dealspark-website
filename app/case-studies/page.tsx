@@ -42,7 +42,7 @@ const cases = [
     client: 'Client Hidden',
     sector: 'Technical Recruitment',
     headline: 'Consistent Client Pipeline for a Recruitment Firm',
-    description: 'How DealSpark generated a repeatable pipeline of client conversations for a technical recruitment business.',
+    description: 'A technical recruitment firm were expanding the business in a new market. DealSpark built separate outbound tracks for each persona, running independent multichannel campaigns to each audience.',
     stats: [
       { value: '—', label: 'Pipeline Generated' },
       { value: '—', label: 'Qualified Opportunities' },
