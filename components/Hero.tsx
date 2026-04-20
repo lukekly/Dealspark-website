@@ -16,16 +16,6 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center pb-24">
-        {/* Badge */}
-        <div className="flex justify-center mb-8">
-          <span className="section-label animate-fade-in flex items-center gap-1.5">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true" className="text-accent">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-            </svg>
-            Outbound That Actually Works
-          </span>
-        </div>
-
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight mb-8">
           <span className="gradient-text-white">We Run Your Outbound.</span>
@@ -49,7 +39,7 @@ export default function Hero() {
             </svg>
           </Link>
           <Link href="/case-study/lennox-academy" className="btn-outline text-base py-3.5 px-7">
-            View Case Study
+            View Case Studies
           </Link>
         </div>
 

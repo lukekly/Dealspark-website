@@ -56,8 +56,8 @@ export default function HowItWorks() {
             id="hiw-heading"
             className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight"
           >
-            Three principles.{' '}
-            <span className="gradient-text">One approach.</span>
+            The Approach.{' '}
+            <span className="gradient-text">One system.</span>
           </h2>
           <p className="mt-5 text-white/55 max-w-xl mx-auto text-lg">
             DealSpark works with a select group of clients as a GTM partner.

@@ -69,7 +69,7 @@ export default function PainSection() {
             <span className="gradient-text">actually looks like.</span>
           </h2>
           <p className="mt-5 text-white/55 max-w-xl mx-auto text-lg">
-            Four principles we hold ourselves to on every engagement, without exception.
+            The standard we hold ourselves to on every engagement.
           </p>
         </AnimatedSection>
 
