@@ -57,7 +57,7 @@ export default function FinalCTA() {
               href="/case-studies"
               className="btn-outline text-base py-4 px-8"
             >
-              Read Case Study
+              Read Case Studies
             </Link>
           </div>
 
