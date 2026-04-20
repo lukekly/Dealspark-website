@@ -73,10 +73,10 @@ export default function CaseStudiesPage() {
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight mb-5">
             Real results.{' '}
-            <span className="gradient-text">Real clients.</span>
+            <span className="gradient-text">Real Companies.</span>
           </h1>
           <p className="text-white/55 text-lg leading-relaxed">
-            A selection of engagements and the outcomes they produced.
+            See how B2B companies are generating consistent pipeline with DealSpark.
           </p>
         </div>
       </header>
