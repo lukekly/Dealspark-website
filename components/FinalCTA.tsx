@@ -35,7 +35,7 @@ export default function FinalCTA() {
 
           <p className="text-lg text-white/55 max-w-xl mx-auto mb-10 leading-relaxed">
             DealSpark works with a select number of clients at any one time.
-            Every engagement gets full senior attention, and we only take on
+            Every engagement gets full attention, and we only take on
             work where we know we can deliver. Book a call to find out if
             it is the right fit.
           </p>

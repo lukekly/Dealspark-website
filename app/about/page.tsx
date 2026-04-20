@@ -15,7 +15,7 @@ const credentials = [
   'Former BDR, Enterprise AE, and LinkedIn Account Executive',
   'Closed six-figure enterprise deals with some of the world\'s biggest brands',
   'Sourced millions in pipeline across SaaS, tech, and professional services',
-  'Second-time founder — previous exit in FMCG',
+  'Second-time founder, previous exit in FMCG',
 ];
 
 export default function AboutPage() {
@@ -52,8 +52,8 @@ export default function AboutPage() {
               businesses don&apos;t have the time, expertise, or headcount to figure it out.
             </p>
             <p className="text-white/55 leading-relaxed">
-              DealSpark combines the one thing AI can&apos;t replace — a commercially
-              grounded human conversation — with the precision that modern tooling makes
+              DealSpark combines the one thing AI can&apos;t replace, a commercially
+              grounded human conversation, with the precision that modern tooling makes
               possible. Clay-powered data enrichment, signal-based targeting, and
               automated workflows run underneath every engagement alongside multichannel
               outbound. The calls, the judgment, and the commercial instinct sit on top.

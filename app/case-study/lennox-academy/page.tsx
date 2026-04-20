@@ -172,7 +172,7 @@ export default function LennoxAcademyCaseStudy() {
           <p>
             The Lennox Academy is a small, senior team. Like many
             high-performing consultancies, leadership owns GTM, delivers client
-            work, builds partnerships, and closes deals — simultaneously.
+            work, builds partnerships, and closes deals, all at once.
           </p>
           <p>
             Their own outbound was already converting well. Close rates were
