@@ -54,7 +54,7 @@ export default function FinalCTA() {
               </svg>
             </a>
             <Link
-              href="/case-study/lennox-academy"
+              href="/case-studies"
               className="btn-outline text-base py-4 px-8"
             >
               Read Case Study

@@ -38,7 +38,7 @@ export default function Hero() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Link>
-          <Link href="/case-study/lennox-academy" className="btn-outline text-base py-3.5 px-7">
+          <Link href="/case-studies" className="btn-outline text-base py-3.5 px-7">
             View Case Studies
           </Link>
         </div>

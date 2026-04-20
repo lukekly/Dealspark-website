@@ -55,8 +55,8 @@ export default function LennoxAcademyCaseStudy() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
-            <Link href="/" className="section-label hover:border-accent/50 transition-colors">
-              ← Back to DealSpark
+            <Link href="/case-studies" className="section-label hover:border-accent/50 transition-colors">
+              ← All Case Studies
             </Link>
           </div>
 

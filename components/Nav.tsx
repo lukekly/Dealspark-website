@@ -50,7 +50,7 @@ export default function Nav() {
               How It Works
             </Link>
             <Link
-              href="/case-study/lennox-academy"
+              href="/case-studies"
               className="text-sm text-white/60 hover:text-white transition-colors duration-200 font-medium"
             >
               Case Studies
@@ -116,7 +116,7 @@ export default function Nav() {
             How It Works
           </Link>
           <Link
-            href="/case-study/lennox-academy"
+            href="/case-studies"
             className="text-sm text-white/60 hover:text-white transition-colors py-2 font-medium"
             onClick={() => setMenuOpen(false)}
           >
