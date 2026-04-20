@@ -64,10 +64,10 @@ export default function HomePage() {
       />
       <Hero />
       <PainSection />
-      <HowItWorks />
-      <OldVsNew />
       <CaseStudyPreview />
       <Industries />
+      <OldVsNew />
+      <HowItWorks />
       <FinalCTA />
     </>
   );
