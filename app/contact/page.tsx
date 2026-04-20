@@ -46,8 +46,7 @@ export default function ContactPage() {
                 {[
                   'An honest conversation about your current go-to-market',
                   'A clear view of whether outbound is the right move for you right now',
-                  'A proposed approach if there is a fit',
-                  'If there is not, we will tell you',
+                  'A proposed approach if there is a fit, and if there is not, we will tell you.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <svg
