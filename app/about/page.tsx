@@ -13,7 +13,7 @@ const CALENDLY = 'https://calendly.com/dealspark/strategy-call';
 const credentials = [
   '10 years in B2B sales',
   'Former BDR, Enterprise AE, and LinkedIn Account Executive',
-  'Closed enterprise deals with some of the world\'s biggest brands',
+  'Closed six-figure enterprise deals with some of the world\'s biggest brands',
   'Sourced millions in pipeline across SaaS, tech, and professional services',
   'Second-time founder — previous exit in FMCG',
 ];
