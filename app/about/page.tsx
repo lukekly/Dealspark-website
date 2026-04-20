@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import AnimatedSection from '@/components/AnimatedSection';
+import FounderPhoto from '@/components/FounderPhoto';
 
 export const metadata: Metadata = {
   title: { absolute: 'About DealSpark | B2B Outbound Partner' },
@@ -81,27 +82,8 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] lg:grid-cols-[240px_1fr]">
 
               {/* Photo */}
-              <div
-                className="relative bg-accent/5 flex items-center justify-center min-h-[220px] sm:min-h-0"
-                style={{ borderRight: '1px solid rgba(255,255,255,0.06)' }}
-              >
-                <img
-                  src="/luke-kelly.jpg"
-                  alt="Luke Kelly, Founder of DealSpark"
-                  className="w-full h-full object-cover object-top"
-                  style={{ minHeight: '220px' }}
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = 'none';
-                  }}
-                />
-                {/* Fallback initials if no photo */}
-                <div
-                  className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-accent/40 select-none"
-                  aria-hidden="true"
-                  style={{ zIndex: -1 }}
-                >
-                  LK
-                </div>
+              <div style={{ borderRight: '1px solid rgba(255,255,255,0.06)' }}>
+                <FounderPhoto />
               </div>
 
               {/* Details */}
