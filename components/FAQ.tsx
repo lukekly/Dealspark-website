@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'What does the first 30 days look like?',
-    a: 'We start with a strategy session to align on your ICP, positioning, and target markets. From there we build the targeting lists, set up the infrastructure, and launch the first sequences. By the end of month one, the system is live and generating activity.',
+    a: 'We start with a strategy session to align on your ICP, positioning, and target markets. From there we build the targeting lists, set up the infrastructure, and launch. By the end of month one, the system is live and generating activity.',
   },
   {
     q: 'Who do you work with?',
