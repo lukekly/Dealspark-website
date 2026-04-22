@@ -5,6 +5,7 @@ import HowItWorks from '@/components/HowItWorks';
 import OldVsNew from '@/components/OldVsNew';
 import CaseStudyPreview from '@/components/CaseStudyPreview';
 import Industries from '@/components/Industries';
+import FAQ from '@/components/FAQ';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
@@ -68,6 +69,7 @@ export default function HomePage() {
       <Industries />
       <OldVsNew />
       <HowItWorks />
+      <FAQ />
       <FinalCTA />
     </>
   );
