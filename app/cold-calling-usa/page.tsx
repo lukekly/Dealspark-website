@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Cold Calling Agency USA',
   description:
     'B2B cold calling for US companies. DealSpark builds qualified pipeline through cold calling, email, and LinkedIn across the US market.',
-  alternates: { canonical: 'https://dealspark.io/cold-calling-usa' },
+  alternates: { canonical: 'https://www.dealspark.io/cold-calling-usa' },
 };
 
 const sections = [
@@ -50,12 +50,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Cold Calling Agency USA',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'B2B Cold Calling',
   areaServed: { '@type': 'Country', name: 'United States' },
   description:
     'B2B cold calling for US companies. Qualified pipeline through calls, email, and LinkedIn across the US market.',
-  url: 'https://dealspark.io/cold-calling-usa',
+  url: 'https://www.dealspark.io/cold-calling-usa',
 };
 
 export default function ColdCallingUSAPage() {

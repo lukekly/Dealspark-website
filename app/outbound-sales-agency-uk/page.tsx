@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Outbound Sales Agency UK',
   description:
     'B2B outbound sales agency serving UK companies. Cold calling, email, and LinkedIn to generate qualified pipeline.',
-  alternates: { canonical: 'https://dealspark.io/outbound-sales-agency-uk' },
+  alternates: { canonical: 'https://www.dealspark.io/outbound-sales-agency-uk' },
 };
 
 const sections = [
@@ -43,12 +43,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Outbound Sales Agency UK',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'Outbound Sales',
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
   description:
     'Outbound sales agency for UK B2B companies. Cold calling, email, and LinkedIn to generate qualified pipeline.',
-  url: 'https://dealspark.io/outbound-sales-agency-uk',
+  url: 'https://www.dealspark.io/outbound-sales-agency-uk',
 };
 
 export default function OutboundSalesAgencyUKPage() {

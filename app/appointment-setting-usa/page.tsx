@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Appointment Setting USA',
   description:
     'B2B appointment setting for US companies. Cold calling, email, and LinkedIn outreach that creates qualified sales conversations across the USA.',
-  alternates: { canonical: 'https://dealspark.io/appointment-setting-usa' },
+  alternates: { canonical: 'https://www.dealspark.io/appointment-setting-usa' },
 };
 
 const sections = [
@@ -43,12 +43,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Appointment Setting USA',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'B2B Appointment Setting',
   areaServed: { '@type': 'Country', name: 'United States' },
   description:
     'B2B appointment setting for US companies. Cold calling and multichannel outreach to create qualified sales conversations.',
-  url: 'https://dealspark.io/appointment-setting-usa',
+  url: 'https://www.dealspark.io/appointment-setting-usa',
 };
 
 export default function AppointmentSettingUSAPage() {

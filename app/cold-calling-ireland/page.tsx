@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Cold Calling Agency Ireland',
   description:
     'B2B cold calling for Irish companies. DealSpark generates qualified pipeline through cold calling, email, and LinkedIn across Ireland.',
-  alternates: { canonical: 'https://dealspark.io/cold-calling-ireland' },
+  alternates: { canonical: 'https://www.dealspark.io/cold-calling-ireland' },
 };
 
 const sections = [
@@ -50,12 +50,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Cold Calling Agency Ireland',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'B2B Cold Calling',
   areaServed: { '@type': 'Country', name: 'Ireland' },
   description:
     'B2B cold calling for Irish companies. DealSpark generates qualified pipeline through cold calling, email, and LinkedIn.',
-  url: 'https://dealspark.io/cold-calling-ireland',
+  url: 'https://www.dealspark.io/cold-calling-ireland',
 };
 
 export default function ColdCallingIrelandPage() {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'B2B Lead Generation USA',
   description:
     'B2B lead generation for US companies. Qualified pipeline through cold calling, email, and LinkedIn with Clay-powered targeting behind every campaign.',
-  alternates: { canonical: 'https://dealspark.io/b2b-lead-generation-usa' },
+  alternates: { canonical: 'https://www.dealspark.io/b2b-lead-generation-usa' },
 };
 
 const sections = [
@@ -43,12 +43,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'B2B Lead Generation USA',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'B2B Lead Generation',
   areaServed: { '@type': 'Country', name: 'United States' },
   description:
     'B2B lead generation for US companies. Cold calling, email, and LinkedIn outbound to build qualified pipeline.',
-  url: 'https://dealspark.io/b2b-lead-generation-usa',
+  url: 'https://www.dealspark.io/b2b-lead-generation-usa',
 };
 
 export default function B2BLeadGenerationUSAPage() {

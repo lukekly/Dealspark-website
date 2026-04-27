@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dealspark.io'),
+  metadataBase: new URL('https://www.dealspark.io'),
   title: {
     default: 'DealSpark | B2B Lead Generation and Cold Calling Agency | Ireland, UK and USA',
     template: '%s | DealSpark',

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <!-- Icon -->
+  <rect width="32" height="32" x="0" y="4" rx="7" fill="#7c3aed"/>
+  <path d="M18 6L9.09 16.97H16L15 26L25.91 15H19L18 6Z" fill="white"/>
+  <!-- Wordmark -->
+  <text x="42" y="27" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="white" letter-spacing="-0.3">DealSpark</text>
+</svg>

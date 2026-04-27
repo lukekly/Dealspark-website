@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'B2B Lead Generation Ireland',
   description:
     'B2B lead generation for Irish companies. Qualified pipeline through cold calling, email, and LinkedIn with Clay-powered targeting behind every campaign.',
-  alternates: { canonical: 'https://dealspark.io/b2b-lead-generation-ireland' },
+  alternates: { canonical: 'https://www.dealspark.io/b2b-lead-generation-ireland' },
 };
 
 const sections = [
@@ -43,12 +43,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'B2B Lead Generation Ireland',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'B2B Lead Generation',
   areaServed: { '@type': 'Country', name: 'Ireland' },
   description:
     'B2B lead generation for Irish companies. Cold calling, email, and LinkedIn outbound to build qualified pipeline.',
-  url: 'https://dealspark.io/b2b-lead-generation-ireland',
+  url: 'https://www.dealspark.io/b2b-lead-generation-ireland',
 };
 
 export default function B2BLeadGenerationIrelandPage() {

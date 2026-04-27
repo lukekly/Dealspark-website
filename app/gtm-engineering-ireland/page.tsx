@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'GTM Engineering Ireland',
   description:
     'GTM Engineering for Irish B2B companies. Clay-powered data enrichment, signal-based prospecting, and ICP mapping to produce better pipeline from outbound.',
-  alternates: { canonical: 'https://dealspark.io/gtm-engineering-ireland' },
+  alternates: { canonical: 'https://www.dealspark.io/gtm-engineering-ireland' },
 };
 
 const sections = [
@@ -50,12 +50,12 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'GTM Engineering Services Ireland',
-  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://dealspark.io' },
+  provider: { '@type': 'Organization', name: 'DealSpark', url: 'https://www.dealspark.io' },
   serviceType: 'GTM Engineering',
   areaServed: { '@type': 'Country', name: 'Ireland' },
   description:
     'GTM Engineering for Irish B2B companies. Clay-powered data enrichment, signal-based prospecting, and ICP mapping for outbound.',
-  url: 'https://dealspark.io/gtm-engineering-ireland',
+  url: 'https://www.dealspark.io/gtm-engineering-ireland',
 };
 
 export default function GTMEngineeringIrelandPage() {

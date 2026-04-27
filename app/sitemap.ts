@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE = 'https://dealspark.io';
+const BASE = 'https://www.dealspark.io';
 
 const SERVICE_SLUGS = [
   'cold-calling-ireland',
@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${BASE}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/case-studies`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     {
       url: `${BASE}/case-study/lennox-academy`,
       lastModified: now,

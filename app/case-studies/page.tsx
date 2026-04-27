@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: { absolute: 'Case Studies | DealSpark' },
   description: 'Real results from DealSpark outbound engagements. See how we generate qualified pipeline for B2B companies across Ireland, UK and USA.',
-  alternates: { canonical: 'https://dealspark.io/case-studies' },
+  alternates: { canonical: 'https://www.dealspark.io/case-studies' },
 };
 
 const cases = [

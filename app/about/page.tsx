@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: 'About DealSpark | B2B Outbound Partner' },
   description:
     'DealSpark combines commercially grounded outbound with Clay-powered targeting and modern GTM tooling. Founded by Luke Kelly, enterprise AE and second-time founder.',
-  alternates: { canonical: 'https://dealspark.io/about' },
+  alternates: { canonical: 'https://www.dealspark.io/about' },
 };
 
 const CALENDLY = 'https://calendly.com/dealspark/strategy-call';
