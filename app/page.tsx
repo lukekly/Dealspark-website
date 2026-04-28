@@ -11,10 +11,10 @@ import FinalCTA from '@/components/FinalCTA';
 export const metadata: Metadata = {
   title: {
     absolute:
-      'DealSpark | B2B Lead Generation and Cold Calling Agency | Ireland, UK and USA',
+      'DealSpark | B2B Lead Generation and Outbound Sales Agency | Ireland, UK and USA',
   },
   description:
-    'DealSpark is a senior B2B outbound partner delivering qualified pipeline through cold calling, email, and LinkedIn. Serving clients across Ireland, UK, and USA.',
+    'DealSpark is an outbound business development partner delivering qualified meetings and sales pipeline through cold calling, email, and LinkedIn. Serving clients across Ireland, UK, and USA.',
 };
 
 const localBusinessSchema = {

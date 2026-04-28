@@ -15,11 +15,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.dealspark.io'),
   title: {
-    default: 'DealSpark | B2B Lead Generation and Cold Calling Agency | Ireland, UK and USA',
+    default: 'DealSpark | B2B Lead Generation and Outbound Sales Agency | Ireland, UK and USA',
     template: '%s | DealSpark',
   },
   description:
-    'DealSpark is a B2B outbound partner helping companies generate qualified pipeline through cold calling, cold email, and LinkedIn. Serving clients across Ireland, UK and USA.',
+    'DealSpark is an outbound business development partner delivering qualified meetings and sales pipeline through cold calling, email, and LinkedIn. Serving clients across Ireland, UK, and USA.',
   keywords: [
     'cold calling agency',
     'cold calling agency Ireland',
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     locale: 'en_IE',
     url: 'https://dealspark.io',
     siteName: 'DealSpark',
-    title: 'DealSpark | B2B Outbound Sales and Cold Calling Agency | Ireland, UK and USA',
+    title: 'DealSpark | B2B Lead Generation and Outbound Sales Agency | Ireland, UK and USA',
     description:
-      'DealSpark is a B2B outbound partner helping companies generate qualified pipeline through cold calling, cold email, and LinkedIn. Serving clients across Ireland, UK and USA.',
+      'DealSpark is an outbound business development partner delivering qualified meetings and sales pipeline through cold calling, email, and LinkedIn. Serving clients across Ireland, UK, and USA.',
     images: [
       {
         url: '/og-image.png',
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DealSpark | B2B Outbound Sales and Cold Calling Agency | Ireland, UK and USA',
+    title: 'DealSpark | B2B Lead Generation and Outbound Sales Agency | Ireland, UK and USA',
     description:
-      'DealSpark is a B2B outbound partner helping companies generate qualified pipeline through cold calling, cold email, and LinkedIn. Serving clients across Ireland, UK and USA.',
+      'DealSpark is an outbound business development partner delivering qualified meetings and sales pipeline through cold calling, email, and LinkedIn. Serving clients across Ireland, UK, and USA.',
     images: ['/og-image.png'],
   },
   robots: {
