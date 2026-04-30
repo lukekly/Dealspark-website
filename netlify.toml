@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://dealspark.io/*"
+  to = "https://www.dealspark.io/:splat"
+  status = 301
+  force = true
