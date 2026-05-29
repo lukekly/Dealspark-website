@@ -235,7 +235,7 @@ export default function ServicesPage() {
             <span className="gradient-text">right for you?</span>
           </h2>
           <p className="text-white/55 leading-relaxed mb-8">
-            Book a 15-minute call and we'll point you in the right direction. No pitch, no pressure.
+            Book a 15-minute call and we&apos;ll point you in the right direction. No pitch, no pressure.
           </p>
           <a
             href="https://calendly.com/dealspark/strategy-call"
