@@ -3,9 +3,9 @@ import AnimatedSection from './AnimatedSection';
 const steps = [
   {
     number: '01',
-    title: 'Precision Targeting',
+    title: 'Define Your Ideal Customer',
     description:
-      'Every engagement starts with a clearly defined ICP. The right companies, the right titles, the right commercial triggers. Clay-powered data means every prospect is selected with intent, not volume.',
+      'We start with a focused conversation about exactly who you want to reach. The right industry, company size, and decision-maker title. From there we build the list and source the contact data. Every prospect is selected with intent.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="3" />
@@ -16,9 +16,9 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Messaging That Resonates',
+    title: 'We Make the Calls',
     description:
-      'People don\'t buy products; they buy solutions to problems. Every call, email, and LinkedIn touchpoint is grounded in the commercial challenges your prospects actually face, not a templated script. The conversation has to be earned before it can be had.',
+      'We contact your prospects directly to uncover relevance fast. We\'re not reading from a script, we\'re having real conversations, qualifying interest, and handling objections. Every call is logged and you get full market intel on what we\'re hearing.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -27,9 +27,9 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Predictable Pipeline',
+    title: 'You Get the Outcome',
     description:
-      'The goal is not to fill a calendar. It is to generate consistent, high-quality conversations with buyers you can actually close, month after month. Revenue visibility you can plan around.',
+      'A completed conversation, an activated lead, or a meeting booked into your diary. We track every interaction. You know exactly what\'s happening in your market and who\'s ready to talk.',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
@@ -56,15 +56,9 @@ export default function HowItWorks() {
             id="hiw-heading"
             className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight"
           >
-            The Approach.{' '}
-            <span className="gradient-text">One system.</span>
+            Real Conversations With{' '}
+            <span className="gradient-text">Your Ideal Customers.</span>
           </h2>
-          <p className="mt-5 text-white/55 max-w-xl mx-auto text-lg">
-            DealSpark works with a select group of clients as a GTM partner.
-            Precise targeting, commercially grounded outreach, and consistent
-            execution, held to the standard you&apos;d expect of your best
-            internal hire.
-          </p>
         </AnimatedSection>
 
         {/* Steps */}
