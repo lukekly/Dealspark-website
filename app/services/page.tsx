@@ -30,7 +30,7 @@ const standaloneServices = [
   {
     title: 'Your Outbound Plan of Attack',
     description:
-      'A focused two-hour session where we build everything you need to start outbound. ICP defined, messaging angles developed, problem-based scripts written, and a clear market penetration strategy. Everything ready to execute from day one.',
+      'A focused two-hour session for companies who want to run their own outbound. ICP defined, messaging angles developed, call scripts written, and a clear market penetration strategy. Everything your team needs to know where to start and how to execute.',
   },
   {
     title: 'Prospect List Build',
@@ -40,7 +40,7 @@ const standaloneServices = [
   {
     title: 'Tech Stack Implementation',
     description:
-      'Your full outbound tech stack set up and configured for your business. Built once and built properly for your sales team to crack on with from day one.',
+      'Your full outbound tech stack set up and configured for your business. Built properly. Your team will have everything they need to hit the ground running from day one.',
   },
 ];
 
@@ -115,7 +115,7 @@ export default function ServicesPage() {
                     {[
                       'ICP consultation',
                       'List build and data enrichment',
-                      'Problem-based scripts created',
+                      'Call scripts created',
                       '30–50 conversations with your ideal customers expected',
                       'Market insights and validation',
                       'Competitive intel gathered',
@@ -197,7 +197,7 @@ export default function ServicesPage() {
                   <ul className="space-y-3">
                     {[
                       'Cold email campaigns',
-                      'Email infrastructure build out — inboxes, domains and automations',
+                      'Email infrastructure build out: inboxes, domains and automations',
                       'Total addressable market mapped',
                       'LinkedIn network growth included',
                       'Live Slack notifications',
