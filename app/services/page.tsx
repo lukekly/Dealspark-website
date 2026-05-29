@@ -166,7 +166,7 @@ export default function ServicesPage() {
                   {/* Includes */}
                   <div className="mb-8 flex-1">
                     <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-4">
-                      What's included
+                      What&apos;s included
                     </p>
                     <ul className="space-y-3">
                       {service.includes.map((item) => (
