@@ -64,11 +64,11 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
       <Hero />
+      <HowItWorks />
+      <CaseStudyPreview hideComingSoon />
       <PainSection />
-      <CaseStudyPreview />
       <Industries />
       <OldVsNew />
-      <HowItWorks />
       <FAQ />
       <FinalCTA />
     </>

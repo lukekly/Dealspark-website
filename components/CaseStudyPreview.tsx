@@ -26,7 +26,7 @@ const comingSoon = [
   },
 ];
 
-export default function CaseStudyPreview() {
+export default function CaseStudyPreview({ hideComingSoon = false }: { hideComingSoon?: boolean }) {
   return (
     <section
       className="py-24 lg:py-32"
@@ -185,7 +185,7 @@ export default function CaseStudyPreview() {
         </AnimatedSection>
 
         {/* Coming Soon cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+        {!hideComingSoon && <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
           {comingSoon.map((cs, index) => (
             <AnimatedSection key={cs.id} delay={150 + index * 100}>
               <div
@@ -290,7 +290,7 @@ export default function CaseStudyPreview() {
               </div>
             </AnimatedSection>
           ))}
-        </div>
+        </div>}
       </div>
     </section>
   );
