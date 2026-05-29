@@ -50,6 +50,12 @@ export default function Nav() {
               How It Works
             </Link>
             <Link
+              href="/services"
+              className="text-sm text-white/60 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Services
+            </Link>
+            <Link
               href="/case-studies"
               className="text-sm text-white/60 hover:text-white transition-colors duration-200 font-medium"
             >
@@ -114,6 +120,13 @@ export default function Nav() {
             onClick={() => setMenuOpen(false)}
           >
             How It Works
+          </Link>
+          <Link
+            href="/services"
+            className="text-sm text-white/60 hover:text-white transition-colors py-2 font-medium"
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
           </Link>
           <Link
             href="/case-studies"
