@@ -36,7 +36,7 @@ const standards = [
     ),
     title: 'Problem-Based Prospecting',
     description:
-      'We build messaging around real commercial problems your prospects are trying to solve. Every call, email, and LinkedIn touchpoint is rooted in a specific trigger or pain, not a generic pitch.',
+      'We build messaging around the real commercial problems your prospects are trying to solve. Every call is rooted in a specific trigger or pain, not a generic pitch.',
   },
   {
     id: 4,
@@ -65,11 +65,11 @@ export default function PainSection() {
             id="standard-heading"
             className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight max-w-2xl mx-auto"
           >
-            What great outbound{' '}
-            <span className="gradient-text">actually looks like.</span>
+            This Is How{' '}
+            <span className="gradient-text">We Operate.</span>
           </h2>
           <p className="mt-5 text-white/55 max-w-xl mx-auto text-lg">
-            The standard we hold ourselves to on every engagement.
+            Every engagement is measured on real commercial outcomes, not activity.
           </p>
         </AnimatedSection>
 
