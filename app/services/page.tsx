@@ -220,6 +220,76 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      {/* Standalone services */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-16">
+        <AnimatedSection className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4">
+            Need Something{' '}
+            <span className="gradient-text">Specific?</span>
+          </h2>
+          <p className="text-white/55 text-lg leading-relaxed">
+            Standalone services available without a full engagement.
+          </p>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              title: 'Your Outbound Plan of Attack',
+              price: '€500',
+              description:
+                'A focused two-hour session where we build everything you need to start outbound. ICP defined, messaging angles developed, problem-based scripts written, and a clear market penetration strategy. Everything ready to execute from day one.',
+            },
+            {
+              title: 'Prospect List Build',
+              price: '€1,250',
+              description:
+                '500 fully validated contacts built to your exact ICP, with verified direct mobile numbers. Every record enriched and ready for your sales team to call.',
+            },
+            {
+              title: 'Tech Stack Implementation',
+              price: '€2,500',
+              description:
+                'Your full outbound tech stack set up and configured for your business. Built once and built properly for your sales team to crack on with from day one.',
+            },
+          ].map((item, index) => (
+            <AnimatedSection key={item.title} delay={index * 100}>
+              <div
+                className="rounded-2xl flex flex-col h-full"
+                style={{
+                  background: 'rgba(255,255,255,0.02)',
+                  border: '1px solid rgba(255,255,255,0.07)',
+                }}
+              >
+                <div className="h-1 w-full rounded-t-2xl" style={{ background: 'rgba(255,255,255,0.06)' }} />
+                <div className="p-8 flex flex-col flex-1">
+                  <p
+                    className="text-3xl font-bold mb-3 gradient-text"
+                  >
+                    {item.price}
+                  </p>
+                  <h3 className="text-xl font-bold text-white mb-4 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-white/55 text-sm leading-relaxed flex-1 mb-8">
+                    {item.description}
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="btn-outline text-sm py-3 px-5 justify-center"
+                  >
+                    Get in Touch
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+      </div>
+
       {/* Bottom CTA */}
       <div className="relative py-20 overflow-hidden">
         <div
