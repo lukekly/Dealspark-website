@@ -25,9 +25,8 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">
-          From ICP strategy and targeting to multichannel execution across
-          calls, email, and LinkedIn, DealSpark operates your outbound so
-          pipeline becomes predictable.
+          We pick up the phone and speak to the people you want to do business
+          with. You focus on closing the ones we bring you.
         </p>
 
         {/* CTAs */}
