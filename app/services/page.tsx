@@ -119,7 +119,7 @@ export default function ServicesPage() {
                       '30–50 conversations with your ideal customers expected',
                       'Market insights and validation',
                       'Competitive intel gathered',
-                      'Onboarding and wrap-up review call included',
+                      'Pilot review call included',
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <CheckIcon />
