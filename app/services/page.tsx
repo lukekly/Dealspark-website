@@ -156,7 +156,7 @@ export default function ServicesPage() {
                   <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-4">Everything in the 30-Day Sprint, plus:</p>
                   <ul className="space-y-3">
                     {[
-                      '80–100 conversations per month with your ideal customers',
+                      '60–80 conversations per month with your ideal customers',
                       'Meetings booked directly to your calendar',
                       'Live reporting document',
                       'Monthly review calls',
