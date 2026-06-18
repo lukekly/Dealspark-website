@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: { absolute: 'Services | DealSpark' },
   description:
-    'B2B cold calling services for companies across Ireland, the UK and USA. 30-day sprint, 90-day, and six-month outbound engagements.',
+    'B2B cold calling services for companies across Ireland and the UK. 30-day sprint, 90-day, and six-month outbound engagements.',
   alternates: { canonical: 'https://www.dealspark.io/services' },
 };
 
