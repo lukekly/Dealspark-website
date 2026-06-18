@@ -37,7 +37,7 @@ const geos = [
 export default function ServiceLinks() {
   return (
     <section
-      className="py-16 border-t border-white/[0.04]"
+      className="sr-only"
       aria-labelledby="service-links-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
