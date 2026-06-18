@@ -70,6 +70,11 @@ export interface ServiceSection {
   body: string[];
 }
 
+export interface ServiceFAQ {
+  q: string;
+  a: string;
+}
+
 interface ServicePageProps {
   h1: string;
   badge: string;
@@ -77,6 +82,7 @@ interface ServicePageProps {
   intro: string;
   sections: ServiceSection[];
   schemaJson: Record<string, unknown>;
+  faqs?: ServiceFAQ[];
 }
 
 export default function ServicePage({
@@ -86,6 +92,7 @@ export default function ServicePage({
   intro,
   sections,
   schemaJson,
+  faqs,
 }: ServicePageProps) {
   return (
     <div className="min-h-screen pt-20">
@@ -176,6 +183,23 @@ export default function ServicePage({
             </AnimatedSection>
           ))}
         </div>
+
+        {/* FAQs */}
+        {faqs && faqs.length > 0 && (
+          <AnimatedSection className="mt-5">
+            <div className="card p-8 lg:p-10">
+              <h2 className="text-2xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+              <div className="space-y-7">
+                {faqs.map((faq, i) => (
+                  <div key={i} className="border-b border-white/[0.06] last:border-0 pb-7 last:pb-0">
+                    <h3 className="text-base font-semibold text-white mb-2">{faq.q}</h3>
+                    <p className="text-white/60 leading-relaxed text-sm">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+        )}
 
         {/* Sectors */}
         <AnimatedSection className="mt-5">

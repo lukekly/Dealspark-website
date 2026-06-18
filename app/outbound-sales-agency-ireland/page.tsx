@@ -4,7 +4,7 @@ import ServicePage from '@/components/ServicePage';
 export const metadata: Metadata = {
   title: 'Outbound Sales Agency Ireland',
   description:
-    'B2B outbound sales agency based in Ireland. Cold calling, email, and LinkedIn to generate qualified pipeline for Irish B2B companies.',
+    'B2B outbound sales agency based in Ireland. Cold calling, email, and LinkedIn to generate qualified pipeline and market intelligence for Irish B2B companies.',
   alternates: { canonical: 'https://www.dealspark.io/outbound-sales-agency-ireland' },
 };
 
@@ -14,6 +14,14 @@ const sections = [
     body: [
       'An outbound sales agency should extend your commercial capacity without lowering your standards. It should operate as a partner who understands your market, your buyers, and your brand, and executes outbound to the same quality you would expect of your best internal hire.',
       'Most outbound agencies do not deliver that. They deliver volume: high activity, generic outreach, and reporting dashboards that measure effort rather than commercial outcomes.',
+    ],
+  },
+  {
+    heading: 'Your Market Has the Information. We Uncover It.',
+    body: [
+      'The outbound motion is not just a pipeline engine. It is the most direct route to understanding how your market thinks, what problems they are actively trying to solve, and what stands between you and a commercial relationship with them.',
+      'Every conversation your market has with a skilled outbound practitioner surfaces something valuable. Objections, timing signals, competitor mentions, internal dynamics, budget cycles. Most agencies discard this. DealSpark captures and reports on it, so the commercial intelligence compounds alongside the pipeline.',
+      'Clients come to DealSpark for meetings. They stay because the intelligence they gather changes how they position, how they sell, and how they think about their market.',
     ],
   },
   {
@@ -31,11 +39,34 @@ const sections = [
     ],
   },
   {
-    heading: 'GTM Engineering Behind Every Campaign',
+    heading: 'Proven Results: €390k Pipeline in 4 Months',
     body: [
-      'Before any outreach begins, DealSpark applies GTM Engineering principles to the targeting. Clay-powered data enrichment builds a prospect list grounded in real firmographic fit, technology signals, and commercial intent.',
-      'The result is outbound that is precise from the start. The right companies, the right buyers, the right timing. Every touchpoint is commercially relevant because the targeting work was done before the first call was made.',
+      'For The Lennox Academy, a revenue enablement firm working with Salesforce, Gong, and LinkedIn, DealSpark generated €390k in qualified pipeline across 20 opportunities in four months. Two previous outbound providers had failed to meet their standards before DealSpark stepped in.',
+      'Every targeting decision, message, and call is handled by the same people who run your strategy. Precision over volume, commercial outcomes over activity metrics.',
     ],
+  },
+];
+
+const faqs = [
+  {
+    q: 'What does an outbound sales agency actually do?',
+    a: 'An outbound sales agency runs the top-of-funnel commercial activity your internal team does not have the capacity or expertise to execute consistently. At DealSpark, that means ICP definition, prospect list build, cold calling, email, and LinkedIn outreach, with structured reporting on both pipeline activity and market intelligence gathered along the way.',
+  },
+  {
+    q: 'How is DealSpark different from other outbound agencies in Ireland?',
+    a: 'Most outbound agencies run campaigns through junior SDR teams with high turnover and inconsistent quality. DealSpark operates without a junior layer. Every call, every follow-up, and every strategic decision is handled by a practitioner who understands your buyer and your market. We also work with a small number of clients at any one time, which means your engagement gets full attention rather than being managed as one of fifty accounts.',
+  },
+  {
+    q: 'How long does it take to see pipeline?',
+    a: 'Most clients start seeing qualified conversations and booked meetings within the first four to six weeks of an engagement. The first two weeks are typically spent on ICP definition, targeting, list build, and script development. Calling and outreach begin in week three.',
+  },
+  {
+    q: 'Do you offer shorter engagements for companies new to outbound?',
+    a: 'Yes. DealSpark offers a 30-day sprint for companies that want to test outbound before committing to a longer engagement. It is a focused campaign designed to generate real conversations with your ideal customers and give you a clear picture of how your market responds.',
+  },
+  {
+    q: 'What happens at the end of an engagement?',
+    a: 'Every engagement includes a review call where DealSpark shares what worked, what the market responded to, and what the data suggests about the next move. You leave with a clear picture of your market, a refined outbound playbook, and pipeline to work. If there is a fit for a continued partnership, we will discuss it. If not, we will tell you that too.',
   },
 ];
 
@@ -47,7 +78,7 @@ const schema = {
   serviceType: 'Outbound Sales',
   areaServed: { '@type': 'Country', name: 'Ireland' },
   description:
-    'Outbound sales agency for Irish B2B companies. Cold calling, email, and LinkedIn to generate qualified pipeline.',
+    'Outbound sales agency for Irish B2B companies. Cold calling, email, and LinkedIn to generate qualified pipeline and market intelligence.',
   url: 'https://www.dealspark.io/outbound-sales-agency-ireland',
 };
 
@@ -57,8 +88,9 @@ export default function OutboundSalesAgencyIrelandPage() {
       h1="Outbound Sales Agency Ireland"
       badge="Outbound Sales"
       geo="Ireland"
-      intro="Outbound sales for Irish B2B companies. DealSpark operates your full outbound motion across cold calling, email, and LinkedIn as a trusted commercial partner."
+      intro="Outbound sales for Irish B2B companies. DealSpark operates your full outbound motion across cold calling, email, and LinkedIn, delivering qualified pipeline and the market intelligence your competitors are not capturing."
       sections={sections}
+      faqs={faqs}
       schemaJson={schema}
     />
   );

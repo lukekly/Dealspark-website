@@ -4,7 +4,7 @@ import ServicePage from '@/components/ServicePage';
 export const metadata: Metadata = {
   title: 'Cold Calling Agency Ireland',
   description:
-    'B2B cold calling for Irish companies. DealSpark generates qualified pipeline through cold calling, email, and LinkedIn across Ireland.',
+    'B2B cold calling for Irish companies. DealSpark generates qualified pipeline and market intelligence through cold calling, email, and LinkedIn.',
   alternates: { canonical: 'https://www.dealspark.io/cold-calling-ireland' },
 };
 
@@ -17,10 +17,11 @@ const sections = [
     ],
   },
   {
-    heading: 'Multichannel Outreach Across Calls, Email, and LinkedIn',
+    heading: 'Every Conversation Tells You Something',
     body: [
-      'DealSpark runs calls, email, and LinkedIn across the right contacts depending on what each channel does best for each audience. Cold calling creates direct commercial openings. Email reaches prospects who engage better in writing. LinkedIn builds context and maintains visibility across the buying cycle.',
-      'Each channel reinforces the others. The combination creates multiple points of contact without forcing a rigid outreach order.',
+      'Most cold calling agencies treat a call that does not convert as a missed call. DealSpark treats it as a data point. When your market picks up the phone and engages with a skilled caller, they share things that no survey or desk research can replicate.',
+      'Objections reveal buying barriers. Timing signals reveal budget cycles and internal priorities. Competitor mentions tell you who else is in the conversation and what they are leading with. Across a campaign, these signals build into a clear picture of how your market thinks, what they care about, and when they are ready to move.',
+      'Every DealSpark engagement includes structured market intelligence reporting alongside pipeline activity. You leave with more than meetings. You leave with a sharper understanding of your market.',
     ],
   },
   {
@@ -31,18 +32,41 @@ const sections = [
     ],
   },
   {
-    heading: 'ICP-First Targeting with Clay-Powered Data',
+    heading: 'Multichannel Outreach Across Calls, Email, and LinkedIn',
     body: [
-      'Before a single call is made, DealSpark defines your Ideal Customer Profile with precision. The right company type, the right decision-maker titles, and the commercial triggers that indicate a buyer is ready for your offer.',
-      'Clay-powered data enrichment means every prospect on the list is there for a reason. Not just a name and a number, but an enriched contact with firmographic data, technology signals, and growth indicators that confirm fit before outreach begins.',
+      'DealSpark runs calls, email, and LinkedIn across the right contacts depending on what each channel does best for each audience. Cold calling creates direct commercial openings. Email reaches prospects who engage better in writing. LinkedIn builds context and maintains visibility across the buying cycle.',
+      'Each channel reinforces the others. The combination creates multiple points of contact without forcing a rigid outreach order.',
     ],
   },
   {
-    heading: 'Consistent Qualified Pipeline',
+    heading: 'Proven Results in the Irish Market',
     body: [
-      'DealSpark has delivered consistent qualified pipeline for B2B clients across SaaS, professional services, and training sectors. Cold calling, email, and LinkedIn run across the right contacts to maximise the conversion opportunity.',
+      'DealSpark has delivered consistent qualified pipeline for B2B clients across SaaS, professional services, and training sectors. For The Lennox Academy, a revenue enablement firm working with some of the world\'s leading SaaS companies, DealSpark generated €390k in pipeline in four months.',
       'Engagements are built around your ICP, your market, and your close cycle. DealSpark works with a select number of clients at any one time to ensure every engagement receives full attention.',
     ],
+  },
+];
+
+const faqs = [
+  {
+    q: 'Is cold calling still effective for B2B companies in Ireland?',
+    a: 'Yes. Cold calling remains one of the most effective B2B outbound channels, particularly in the Irish market where relationships and direct conversation carry weight. The key is quality of execution: a problem-based approach, proper ICP targeting, and a caller who understands your market. Generic volume-based calling does not work. Commercially grounded cold calling does.',
+  },
+  {
+    q: 'Do you write the call scripts?',
+    a: 'Yes. DealSpark develops all call scripts based on your ICP, your offer, and the commercial problems your buyers are trying to solve. Scripts are built around the buyer\'s world, not a pitch. They are reviewed and refined throughout the engagement as the market responds.',
+  },
+  {
+    q: 'How quickly will we start seeing results?',
+    a: 'Most clients start seeing qualified conversations and booked meetings within the first four to six weeks. The first two weeks are spent on ICP definition, list build, and script development. Calling begins in week three, and pipeline activity typically follows shortly after.',
+  },
+  {
+    q: 'Do you work with companies outside of Dublin?',
+    a: 'Yes. DealSpark works with B2B companies across Ireland, including regionally headquartered businesses and companies trading internationally from the Irish market. Location is not a constraint for the engagement.',
+  },
+  {
+    q: 'What sectors do you work with?',
+    a: 'DealSpark has experience across B2B SaaS, professional services, recruitment, training, consultancy, and managed services. The common factor is a B2B offer with a defined decision-maker and a deal size that makes outbound commercially viable.',
   },
 ];
 
@@ -64,8 +88,9 @@ export default function ColdCallingIrelandPage() {
       h1="Cold Calling Agency Ireland"
       badge="Cold Calling"
       geo="Ireland"
-      intro="B2B cold calling for Irish companies. DealSpark runs calls, email, and LinkedIn across the right contacts to generate consistent qualified pipeline."
+      intro="B2B cold calling for Irish companies. DealSpark runs calls, email, and LinkedIn across the right contacts to generate consistent qualified pipeline and real market intelligence."
       sections={sections}
+      faqs={faqs}
       schemaJson={schema}
     />
   );
