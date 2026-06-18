@@ -56,13 +56,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Services — Ireland row */}
-        <div className="border-t border-white/[0.04] pt-6 mb-2">
-          <nav
-            className="flex flex-wrap gap-x-5 gap-y-2"
-            aria-label="Services Ireland"
-          >
-            <span className="text-xs text-white/30">Ireland</span>
+        {/* SEO service links — hidden visually, kept for crawlability */}
+        <div style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', borderWidth: 0 }} aria-hidden="true">
+          <nav aria-label="Services Ireland">
+            <span>Ireland</span>
             {[
               { label: 'Cold Calling', href: '/cold-calling-ireland' },
               { label: 'B2B Lead Generation', href: '/b2b-lead-generation-ireland' },
@@ -70,24 +67,11 @@ export default function Footer() {
               { label: 'Outbound Sales Agency', href: '/outbound-sales-agency-ireland' },
               { label: 'GTM Engineering', href: '/gtm-engineering-ireland' },
             ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-xs text-white/30 hover:text-white/55 transition-colors"
-              >
-                {item.label}
-              </Link>
+              <Link key={item.href} href={item.href}>{item.label}</Link>
             ))}
           </nav>
-        </div>
-
-        {/* Services — UK row */}
-        <div className="mb-6">
-          <nav
-            className="flex flex-wrap gap-x-5 gap-y-2"
-            aria-label="Services United Kingdom"
-          >
-            <span className="text-xs text-white/30">United Kingdom</span>
+          <nav aria-label="Services United Kingdom">
+            <span>United Kingdom</span>
             {[
               { label: 'Cold Calling', href: '/cold-calling-uk' },
               { label: 'B2B Lead Generation', href: '/b2b-lead-generation-uk' },
@@ -95,13 +79,7 @@ export default function Footer() {
               { label: 'Outbound Sales Agency', href: '/outbound-sales-agency-uk' },
               { label: 'GTM Engineering', href: '/gtm-engineering-uk' },
             ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-xs text-white/30 hover:text-white/55 transition-colors"
-              >
-                {item.label}
-              </Link>
+              <Link key={item.href} href={item.href}>{item.label}</Link>
             ))}
           </nav>
         </div>
