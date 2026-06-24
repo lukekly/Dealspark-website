@@ -47,16 +47,14 @@ export default function AboutPage() {
               DealSpark was built on a simple observation.
             </p>
             <p className="text-white/55 leading-relaxed">
-              B2B sales outreach is getting more complex. The tech stack is growing. AI
-              is reshaping how buyers are identified, reached, and nurtured. Most
-              businesses don&apos;t have the time, expertise, or headcount to figure it out.
+              The best outbound operations today run on AI. Smarter targeting, faster
+              data enrichment, automated workflows and reporting. The infrastructure
+              exists to operate at a level that wasn&apos;t possible five years ago.
             </p>
             <p className="text-white/55 leading-relaxed">
-              DealSpark combines the one thing AI can&apos;t replace, a commercially
-              grounded human conversation, with the precision that modern tooling makes
-              possible. Clay-powered data enrichment, signal-based targeting, and
-              automated workflows run underneath every engagement alongside multichannel
-              outbound. The calls, the judgment, and the commercial instinct sit on top.
+              The one thing AI can&apos;t replace is a commercially grounded human
+              conversation. DealSpark combines both. AI running the system underneath,
+              human expertise running the conversation on top.
             </p>
           </div>
         </AnimatedSection>
