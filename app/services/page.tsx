@@ -107,7 +107,7 @@ export default function ServicesPage() {
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">New to Outbound?</h2>
                 <p className="text-white/55 text-sm leading-relaxed mb-7">
-                  A focused 30-day campaign to test your market and start real conversations with the right people. Low commitment, fast results. If it works, we keep going. If not, you walk away having learned exactly how your market responds.
+                  A focused 30-day campaign to test your market and start real conversations with the right people. Low commitment, fast results. You walk away with pipeline started and a clear picture of how your market responds.
                 </p>
                 <div className="flex-1">
                   <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-4">What&apos;s included</p>
