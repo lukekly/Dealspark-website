@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata: Metadata = {
@@ -8,23 +7,6 @@ export const metadata: Metadata = {
     'B2B cold calling services for companies across Ireland and the UK. 30-day sprint, 90-day, and six-month outbound engagements.',
   alternates: { canonical: 'https://www.dealspark.io/services' },
 };
-
-const CheckIcon = () => (
-  <svg
-    className="flex-shrink-0 mt-0.5"
-    width="14"
-    height="14"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#7c3aed"
-    strokeWidth="2.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    aria-hidden="true"
-  >
-    <polyline points="20 6 9 17 4 12" />
-  </svg>
-);
 
 const standaloneServices = [
   {
@@ -87,7 +69,6 @@ export default function ServicesPage() {
             >
               <div className="h-1 w-full" style={{ background: 'linear-gradient(90deg, #7c3aed, #a78bfa)' }} />
               <div className="p-8 flex flex-col flex-1">
-                {/* Start Here badge */}
                 <div className="absolute top-5 right-6">
                   <span
                     className="text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full"
@@ -106,28 +87,12 @@ export default function ServicesPage() {
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">New to Outbound?</h2>
-                <p className="text-white/55 text-sm leading-relaxed mb-7">
-                  A focused 30-day campaign to test your market and start real conversations with the right people. Low commitment, fast results. You walk away with pipeline started and a clear picture of how your market responds.
+                <p className="text-white/55 text-sm leading-relaxed mb-6">
+                  A focused 30-day campaign to put you in front of the right people. You walk away with qualified conversations started, a clear picture of how your market responds, and the intelligence to know exactly where to push next.
                 </p>
-                <div className="flex-1">
-                  <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-4">What&apos;s included</p>
-                  <ul className="space-y-3">
-                    {[
-                      'ICP consultation',
-                      'List build and data enrichment',
-                      'Call scripts created',
-                      'Live conversations with your ideal customers every week',
-                      'Market insights and validation',
-                      'Competitive intel gathered',
-                      'Pilot review call included',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <CheckIcon />
-                        <span className="text-sm text-white/60 leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#a78bfa' }}>
+                  Low commitment. Fast signal.
+                </p>
               </div>
             </div>
           </AnimatedSection>
@@ -149,25 +114,12 @@ export default function ServicesPage() {
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">Cold Calling</h2>
-                <p className="text-white/55 text-sm leading-relaxed mb-7">
-                  A full quarter of dedicated cold calling into your target market. Consistent activity, consistent pipeline. Full visibility on every conversation, every outcome, and every piece of market intelligence gathered along the way.
+                <p className="text-white/55 text-sm leading-relaxed mb-6">
+                  A full quarter of dedicated outbound into your target market. Qualified meetings land in your calendar. Every conversation is captured and reported on, so the market intelligence compounds alongside the pipeline.
                 </p>
-                <div className="flex-1">
-                  <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-4">Everything in the 30-Day Sprint, plus:</p>
-                  <ul className="space-y-3">
-                    {[
-                      'Consistent live conversations with your ideal customers',
-                      'Meetings booked directly to your calendar',
-                      'Live reporting document',
-                      'Monthly review calls',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <CheckIcon />
-                        <span className="text-sm text-white/60 leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>
+                  Consistent activity. Consistent pipeline.
+                </p>
               </div>
             </div>
           </AnimatedSection>
@@ -189,27 +141,12 @@ export default function ServicesPage() {
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">Multichannel Outbound</h2>
-                <p className="text-white/55 text-sm leading-relaxed mb-7">
-                  Cold calling and cold email running together as a coordinated campaign. Your total addressable market worked from every angle, reported on in full.
+                <p className="text-white/55 text-sm leading-relaxed mb-6">
+                  Cold calling and cold email working as a coordinated campaign across your total addressable market. Every angle worked, every conversation captured. Pipeline and intelligence compounding month on month.
                 </p>
-                <div className="flex-1">
-                  <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-4">Everything in the 90-Day, plus:</p>
-                  <ul className="space-y-3">
-                    {[
-                      'Cold email campaigns',
-                      'Email infrastructure build out: inboxes, domains and automations',
-                      'Total addressable market mapped',
-                      'LinkedIn network growth included',
-                      'Live Slack notifications',
-                      'Monthly reporting',
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <CheckIcon />
-                        <span className="text-sm text-white/60 leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>
+                  Full market coverage. Full visibility.
+                </p>
               </div>
             </div>
           </AnimatedSection>
