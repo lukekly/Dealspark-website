@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     'DealSpark is an outbound business development partner delivering qualified meetings and sales pipeline through cold calling, email, and LinkedIn. Serving clients across Ireland and the UK.',
+  alternates: { canonical: 'https://www.dealspark.io' },
 };
 
 const localBusinessSchema = {
