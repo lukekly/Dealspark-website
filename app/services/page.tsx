@@ -88,11 +88,19 @@ export default function ServicesPage() {
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">New to Outbound?</h2>
                 <p className="text-white/55 text-sm leading-relaxed mb-6">
-                  A focused 30-day campaign to put you in front of the right people. You walk away with qualified conversations started, a clear picture of how your market responds, and the intelligence to know exactly where to push next.
+                  A sprint campaign to understand how your market responds to your offer. Real conversations with real decision-makers, reported back to you in full. You walk away knowing what lands, who is interested, and where to push next.
                 </p>
-                <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#a78bfa' }}>
-                  Low commitment. Fast signal.
-                </p>
+                <a
+                  href="https://calendly.com/dealspark/strategy-call"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-sm py-2.5 px-5 inline-flex mt-auto"
+                >
+                  Start speaking to your future customers
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </AnimatedSection>
