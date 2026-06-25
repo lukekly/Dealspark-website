@@ -47,6 +47,11 @@ export default function AboutPage() {
               DealSpark was built on a simple observation.
             </p>
             <p className="text-white/55 leading-relaxed">
+              B2B sales outreach is getting more complex. The tech stack is growing. AI
+              is reshaping how buyers are identified, reached, and nurtured. Most
+              businesses don&apos;t have the time, expertise, or headcount to figure it out.
+            </p>
+            <p className="text-white/55 leading-relaxed">
               The best outbound operations today run on AI. Smarter targeting, faster
               data enrichment, automated workflows and reporting. The infrastructure
               exists to operate at a level that wasn&apos;t possible five years ago.
