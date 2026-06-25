@@ -83,7 +83,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="mb-4">
                   <span className="text-xs font-semibold tracking-wider uppercase px-2.5 py-1 rounded-md" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.4)' }}>
-                    The Pilot
+                    Pilot
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">New to Outbound?</h2>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="mb-4">
                   <span className="text-xs font-semibold tracking-wider uppercase px-2.5 py-1 rounded-md" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.4)' }}>
-                    The Campaign
+                    Campaign
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">Cold Calling</h2>
@@ -145,7 +145,7 @@ export default function ServicesPage() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="mb-4">
                   <span className="text-xs font-semibold tracking-wider uppercase px-2.5 py-1 rounded-md" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.4)' }}>
-                    The Partnership
+                    Partnership
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 leading-tight">Multichannel Outbound</h2>
