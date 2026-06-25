@@ -25,8 +25,7 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">
-          We pick up the phone and speak to the people you want to do business
-          with. You focus on closing the meetings we book.
+          We pick up the phone and speak to the decision-makers you want to do business with. You focus on closing the meetings we book.
         </p>
 
         {/* CTAs */}
