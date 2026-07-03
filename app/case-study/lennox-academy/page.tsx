@@ -117,15 +117,16 @@ export default function LennoxAcademyCaseStudy() {
         <div className="prose-dark">
           <h2>Client Overview</h2>
           <p>
-            The Lennox Academy exists for one reason: to help salespeople build
-            long, successful careers by giving them the training, coaching, and
-            support they rarely receive.
+            The Lennox Academy is a B2B revenue enablement firm working with
+            enterprise SaaS companies to raise the commercial capability of their
+            sales teams. Their clients include Salesforce, Gong, and LinkedIn,
+            organisations where sales performance is a strategic priority and
+            standards are non-negotiable.
           </p>
           <p>
-            They work with fast-scaling and established SaaS companies,
-            including Salesforce, Gong, and LinkedIn, delivering revenue
-            enablement and GTM training programmes to some of the most
-            commercially demanding organisations in the market.
+            They deliver GTM training and revenue enablement programmes to some
+            of the most commercially demanding organisations in the market,
+            helping sales teams sell with more precision, consistency, and impact.
           </p>
           <p>
             Outbound is a critical growth channel for Lennox Academy, but it is
