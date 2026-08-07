@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     initials: 'CO',
-    quote: "Luke has helped us reach companies that simply weren’t on our radar before. Complete transparency throughout — we can see exactly what’s working, what isn’t, and what we should change.",
+    quote: "Luke has helped us reach companies that simply weren’t on our radar before. Complete transparency throughout, we can see exactly what’s working, what isn’t, and what we should change.",
     name: "Colm O’Mara",
     title: 'Director, RealTime Recruitment',
   },
