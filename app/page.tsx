@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
+import Testimonials from '@/components/Testimonials';
 import PainSection from '@/components/PainSection';
 import HowItWorks from '@/components/HowItWorks';
 import OldVsNew from '@/components/OldVsNew';
@@ -64,6 +65,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
       />
       <Hero />
+      <Testimonials />
       <HowItWorks />
       <CaseStudyPreview hideComingSoon />
       <PainSection />
