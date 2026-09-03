@@ -116,10 +116,6 @@ const faqs = [
     a: "We handle the full cold calling process: we agree the target companies and decision-makers with you, build the prospect list, develop the call approach, make the calls and manage the follow-up. When there is genuine interest, we qualify the opportunity and make the introduction to your team. You see the outcomes and conversations throughout.",
   },
   {
-    q: 'Who makes the calls?',
-    a: "Luke Kelly, the founder of DealSpark, handles client engagements personally. You are not passed to a call centre or a junior agent. The person representing your business understands B2B sales and treats every conversation accordingly.",
-  },
-  {
     q: 'How do you decide which companies to contact?',
     a: "Before any calling begins, we agree the profile of the ideal target: the company type, size, sector, geography and the decision-maker role. We then build a prospect list based on that profile. We do not call indiscriminately. Every company on the list is there because it fits what we have agreed.",
   },
