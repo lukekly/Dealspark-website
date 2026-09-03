@@ -330,9 +330,6 @@ export default function ColdCallingIrelandPage() {
           {/* Not a call centre */}
           <AnimatedSection delay={70}>
             <div className="card p-8 lg:p-10">
-              <h2 className="text-2xl font-bold text-white mb-4">
-                Not a call centre. Not a numbers game.
-              </h2>
               <div className="space-y-3">
                 <p className="text-white/60 leading-relaxed">
                   High dial counts do not automatically create pipeline.
@@ -445,7 +442,7 @@ export default function ColdCallingIrelandPage() {
               <p className="text-white/55 text-sm leading-relaxed mb-6">
                 The service suits B2B companies where winning a new customer is valuable enough to justify direct, proactive prospecting. The common factor is not the industry. It is a B2B sale with identifiable decision-makers and enough commercial value to make that prospecting worthwhile.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {sectors.map((ind) => (
                   <div key={ind.label} className="flex items-center gap-3">
                     <div
@@ -458,23 +455,6 @@ export default function ColdCallingIrelandPage() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-white/35 leading-relaxed">
-                DealSpark also provides{' '}
-                <Link
-                  href="/b2b-lead-generation-ireland"
-                  className="text-accent hover:text-white transition-colors underline underline-offset-2 decoration-accent/40"
-                >
-                  B2B lead generation in Ireland
-                </Link>
-                {' '}and{' '}
-                <Link
-                  href="/appointment-setting-ireland"
-                  className="text-accent hover:text-white transition-colors underline underline-offset-2 decoration-accent/40"
-                >
-                  appointment setting
-                </Link>
-                {' '}for companies looking for a broader outbound programme.
-              </p>
             </div>
           </AnimatedSection>
 
