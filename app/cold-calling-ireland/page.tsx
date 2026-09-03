@@ -330,6 +330,9 @@ export default function ColdCallingIrelandPage() {
           {/* Not a call centre */}
           <AnimatedSection delay={70}>
             <div className="card p-8 lg:p-10">
+              <h2 className="text-2xl font-bold text-white mb-4">
+                Targeted, relevant calls.
+              </h2>
               <div className="space-y-3">
                 <p className="text-white/60 leading-relaxed">
                   High dial counts do not automatically create pipeline.
