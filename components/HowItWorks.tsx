@@ -98,7 +98,7 @@ export default function HowItWorks() {
         <AnimatedSection delay={0} className="mt-20">
           <div className="text-center mb-6">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-              Everything logged. Nothing hidden.
+              Everything logged. Fully downloadable.
             </h3>
             <p className="text-white/50 max-w-xl mx-auto mb-4">
               Every conversation, outcome, and piece of market intelligence is recorded and available to you in real time.
