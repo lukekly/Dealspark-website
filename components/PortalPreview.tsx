@@ -139,8 +139,45 @@ function NotesPanel({ notes }: { notes: NonNullable<CallEntry['notes']> }) {
   );
 }
 
+const reportData = {
+  period: '2026-05-01 — 2026-05-31',
+  stats: [
+    { label: 'Total Dials',    value: '738' },
+    { label: 'Connects',       value: '149' },
+    { label: 'Conversations',  value: '74' },
+    { label: 'Meetings Set',   value: '10' },
+  ],
+  status: { label: 'On Track', text: 'Meeting rate of 9.2% exceeds 5% benchmark with strong engagement from operational sales leaders despite widespread timing objections.' },
+  winnableRate: '88%',
+  meetingRate:  '9.2%',
+  summary: 'Decision-makers in this ICP are responding positively to the core value proposition around top-of-funnel pipeline generation, with several acknowledging the problem resonates with their situation. Primary resistance in the market is timing-related — many prospects are either managing internal capacity constraints or locked into current approaches until year-end.',
+  successes: [
+    { title: 'Problem Recognition Without Immediate Need', body: 'Multiple prospects explicitly validated the pipeline inconsistency problem even when declining, creating strong callback opportunities.' },
+    { title: 'Outbound-First Teams Show Highest Engagement', body: 'Companies with existing outbound motions but capacity constraints showed genuine interest and booked follow-ups.' },
+    { title: 'LinkedIn Connection as Warm Pipeline', body: 'Prospects consistently agreed to LinkedIn connections as a softer commitment, creating a follow-up channel for future conversion.' },
+  ],
+  blockers: [
+    { title: 'Internal Build Phase Takes Priority', body: 'Several revenue leaders are actively building internal SDR teams, making outsourcing feel premature.' },
+    { title: 'Locked Budgets and Current Commitments', body: 'Prospects report being committed to existing vendors through year-end with no flexibility to evaluate alternatives.' },
+    { title: 'Inbound / Partner-Led Models', body: 'A segment of the market generates business primarily through inbound or channel partners, making cold outbound a poor fit.' },
+  ],
+  titleAnalysis: [
+    { title: 'Head of Sales',              calls: 18, positive: 7,  insight: 'Highest conversion rate. Direct pipeline ownership makes the value prop immediately relevant.' },
+    { title: 'Head of Business Development', calls: 12, positive: 4, insight: 'Mixed responses — BD titles vary significantly. Consultancy BD leaders with capacity gaps are ideal.' },
+    { title: 'Chief Revenue Officer',      calls: 10, positive: 1,  insight: 'CROs consistently declined — too strategic for tactical outbound, or too early in role to evaluate.' },
+    { title: 'VP Sales',                   calls: 6,  positive: 2,  insight: 'VP-level contacts in partner-heavy orgs do not control direct pipeline generation budget.' },
+  ],
+  objections: [
+    { text: '"We have quite a lot going on / not looking to change anything at the moment"', count: 12 },
+    { text: '"We\'re all covered / doing this internally / have internal systems"',           count: 8 },
+    { text: '"Our business is predominantly inbound / partner-led / event-driven"',          count: 5 },
+    { text: '"We\'ve already put money into our current approach / locked in for the year"', count: 4 },
+    { text: '"Too early / just started in role / building the team first"',                  count: 3 },
+  ],
+};
+
 export default function PortalPreview() {
-  const [tab, setTab] = useState<'overview' | 'conversations'>('overview');
+  const [tab, setTab] = useState<'overview' | 'conversations' | 'report'>('overview');
   const [expanded, setExpanded] = useState<number | null>(null);
 
   const toggle = (id: number) => setExpanded(prev => prev === id ? null : id);
@@ -179,15 +216,16 @@ export default function PortalPreview() {
       </div>
 
       {/* Tab bar */}
-      <div className="flex gap-1 px-4 py-3 border-b border-white/[0.06]">
+      <div className="flex gap-1 px-4 py-3 border-b border-white/[0.06] overflow-x-auto">
         {[
           { id: 'overview',       label: 'Overview' },
           { id: 'conversations',  label: 'Conversations (8)' },
+          { id: 'report',         label: 'Reports' },
         ].map(t => (
           <button
             key={t.id}
-            onClick={() => { setTab(t.id as 'overview' | 'conversations'); setExpanded(null); }}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
+            onClick={() => { setTab(t.id as 'overview' | 'conversations' | 'report'); setExpanded(null); }}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150 whitespace-nowrap ${
               tab === t.id
                 ? 'bg-white/10 text-white'
                 : 'text-white/40 hover:text-white/70'
@@ -299,11 +337,114 @@ export default function PortalPreview() {
         </div>
       )}
 
+      {/* ── REPORT TAB ── */}
+      {tab === 'report' && (
+        <div className="divide-y divide-white/[0.05]">
+
+          {/* Report header */}
+          <div className="px-6 py-5">
+            <p className="text-white/30 text-xs font-semibold uppercase tracking-widest mb-1">DealSpark · Monthly Intelligence Report</p>
+            <p className="text-white font-bold text-lg">DealSpark</p>
+            <p className="text-white/35 text-xs">{reportData.period}</p>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-px" style={{ background: 'rgba(255,255,255,0.06)' }}>
+            {reportData.stats.map(s => (
+              <div key={s.label} className="p-5" style={{ background: '#0d1018' }}>
+                <p className="text-white/35 text-xs mb-2">{s.label}</p>
+                <p className="text-2xl font-bold text-white">{s.value}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Status + rates */}
+          <div className="px-6 py-5 space-y-5">
+            <div className="rounded-xl p-4 border border-emerald-500/20 bg-emerald-500/[0.06]">
+              <p className="text-emerald-400 text-sm font-semibold mb-1">{reportData.status.label}</p>
+              <p className="text-white/55 text-xs leading-relaxed">{reportData.status.text}</p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Winnable Rate</p>
+                <p className="text-3xl font-bold text-white">{reportData.winnableRate}</p>
+                <p className="text-white/25 text-xs mt-0.5">excl. wrong contact / bad data</p>
+              </div>
+              <div>
+                <p className="text-white/30 text-xs uppercase tracking-widest mb-1">Meeting Rate</p>
+                <p className="text-3xl font-bold gradient-text">{reportData.meetingRate}</p>
+                <p className="text-white/25 text-xs mt-0.5">benchmark 5%</p>
+              </div>
+            </div>
+            <p className="text-white/45 text-xs leading-relaxed italic border-l-2 border-accent/40 pl-4">{reportData.summary}</p>
+          </div>
+
+          {/* Keys to success / Blockers */}
+          <div className="px-6 py-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <p className="text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-3">Keys to Success</p>
+              <div className="space-y-3">
+                {reportData.successes.map(s => (
+                  <div key={s.title} className="border-l-2 border-emerald-500/40 pl-3">
+                    <p className="text-white/70 text-xs font-semibold mb-0.5">&#10003; {s.title}</p>
+                    <p className="text-white/35 text-xs leading-relaxed">{s.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="text-red-400 text-xs font-semibold uppercase tracking-widest mb-3">Blockers</p>
+              <div className="space-y-3">
+                {reportData.blockers.map(b => (
+                  <div key={b.title} className="border-l-2 border-red-500/40 pl-3">
+                    <p className="text-white/70 text-xs font-semibold mb-0.5">&#10007; {b.title}</p>
+                    <p className="text-white/35 text-xs leading-relaxed">{b.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Title analysis */}
+          <div className="px-6 py-5">
+            <p className="text-white/30 text-xs font-semibold uppercase tracking-widest mb-4">Title Analysis</p>
+            <div className="space-y-3">
+              {reportData.titleAnalysis.map(t => (
+                <div key={t.title} className="border-l-2 border-white/10 pl-4">
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <p className="text-white/70 text-xs font-semibold">{t.title}</p>
+                    <p className="text-white/30 text-xs">
+                      {t.calls} calls{t.positive > 0 ? ' · ' : ''}
+                      {t.positive > 0 && <span className="text-emerald-400/70">{t.positive} positive</span>}
+                    </p>
+                  </div>
+                  <p className="text-white/35 text-xs leading-relaxed italic">{t.insight}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Top objections */}
+          <div className="px-6 py-5">
+            <p className="text-white/30 text-xs font-semibold uppercase tracking-widest mb-4">Top Objections</p>
+            <div className="space-y-2">
+              {reportData.objections.map(o => (
+                <div key={o.text} className="flex items-start gap-3 border-l-2 border-amber-500/30 pl-3">
+                  <p className="text-white/45 text-xs leading-relaxed italic flex-1">{o.text}</p>
+                  <span className="text-amber-400/60 text-xs font-mono whitespace-nowrap">×{o.count}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      )}
+
       {/* Footer */}
       <div className="px-5 py-3 border-t border-white/[0.06] flex items-center justify-between">
         <p className="text-white/20 text-xs">Live data · Updated in real time</p>
         <button className="text-white/30 text-xs border border-white/[0.08] rounded-lg px-3 py-1.5 hover:text-white/60 transition-colors">
-          Download CSV
+          {tab === 'report' ? 'Download PDF' : 'Download CSV'}
         </button>
       </div>
     </div>
