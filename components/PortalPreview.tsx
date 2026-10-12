@@ -179,12 +179,12 @@ const reportData = {
 export default function PortalPreview() {
   const [tab, setTab] = useState<'overview' | 'conversations' | 'report'>('overview');
   const [expanded, setExpanded] = useState<number | null>(null);
-  const [visited, setVisited] = useState<Set<string>>(new Set(['overview']));
+  const [visited, setVisited] = useState<Set<string>>(new Set<string>(['overview']));
 
   const selectTab = (t: 'overview' | 'conversations' | 'report') => {
     setTab(t);
     setExpanded(null);
-    setVisited(prev => new Set([...prev, t]));
+    setVisited(prev => { const next = new Set<string>(prev); next.add(t); return next; });
   };
 
   const toggle = (id: number) => setExpanded(prev => prev === id ? null : id);
