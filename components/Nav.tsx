@@ -50,10 +50,10 @@ export default function Nav() {
               How It Works
             </Link>
             <Link
-              href="/services"
+              href="/pricing"
               className="text-sm text-white/60 hover:text-white transition-colors duration-200 font-medium"
             >
-              Services
+              Pricing
             </Link>
             <Link
               href="/case-studies"
@@ -122,11 +122,11 @@ export default function Nav() {
             How It Works
           </Link>
           <Link
-            href="/services"
+            href="/pricing"
             className="text-sm text-white/60 hover:text-white transition-colors py-2 font-medium"
             onClick={() => setMenuOpen(false)}
           >
-            Services
+            Pricing
           </Link>
           <Link
             href="/case-studies"
