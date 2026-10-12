@@ -302,7 +302,8 @@ export default function PortalPreview() {
 
       {/* ── CONVERSATIONS TAB ── */}
       {tab === 'conversations' && (
-        <div className="divide-y divide-white/[0.05]">
+        <div className="overflow-x-auto">
+        <div className="divide-y divide-white/[0.05] min-w-[560px]">
           {conversationGroups.map(group => (
             <div key={group.label}>
               {/* Group header */}
@@ -349,6 +350,7 @@ export default function PortalPreview() {
               ))}
             </div>
           ))}
+        </div>
         </div>
       )}
 
