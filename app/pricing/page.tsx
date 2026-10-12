@@ -60,8 +60,8 @@ const features = [
     description: 'Strategy, messaging and call frameworks developed before the first dial goes out.',
   },
   {
-    label: 'LinkedIn & Email Follow-Up',
-    description: 'Multi-touch outreach to reinforce calls and keep your pipeline moving between conversations.',
+    label: 'Email Follow-Up',
+    description: 'Follow-up emails to reinforce calls and keep your pipeline moving between conversations.',
   },
   {
     label: 'Monthly Report',
@@ -168,7 +168,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckIcon />
-                    <span className="text-white/70 text-sm">LinkedIn &amp; email follow-up</span>
+                    <span className="text-white/70 text-sm">Email follow-up</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckIcon />
