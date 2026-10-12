@@ -179,6 +179,13 @@ const reportData = {
 export default function PortalPreview() {
   const [tab, setTab] = useState<'overview' | 'conversations' | 'report'>('overview');
   const [expanded, setExpanded] = useState<number | null>(null);
+  const [visited, setVisited] = useState<Set<string>>(new Set(['overview']));
+
+  const selectTab = (t: 'overview' | 'conversations' | 'report') => {
+    setTab(t);
+    setExpanded(null);
+    setVisited(prev => new Set([...prev, t]));
+  };
 
   const toggle = (id: number) => setExpanded(prev => prev === id ? null : id);
 
@@ -218,20 +225,28 @@ export default function PortalPreview() {
       {/* Tab bar */}
       <div className="flex gap-1 px-4 py-3 border-b border-white/[0.06] overflow-x-auto">
         {[
-          { id: 'overview',       label: 'Overview' },
-          { id: 'conversations',  label: 'Conversations (8)' },
-          { id: 'report',         label: 'Reports' },
+          { id: 'overview',      label: 'Overview' },
+          { id: 'conversations', label: 'Conversations (8)' },
+          { id: 'report',        label: 'Reports' },
         ].map(t => (
           <button
             key={t.id}
-            onClick={() => { setTab(t.id as 'overview' | 'conversations' | 'report'); setExpanded(null); }}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150 whitespace-nowrap ${
+            onClick={() => selectTab(t.id as 'overview' | 'conversations' | 'report')}
+            className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150 whitespace-nowrap ${
               tab === t.id
                 ? 'bg-white/10 text-white'
                 : 'text-white/40 hover:text-white/70'
             }`}
           >
             {t.label}
+            {!visited.has(t.id) && (
+              <span className="absolute top-1.5 right-1.5">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
+                </span>
+              </span>
+            )}
           </button>
         ))}
       </div>
