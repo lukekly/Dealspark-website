@@ -295,6 +295,45 @@ body {
   transform: translateY(0);
 }
 
+/* ── ROI Calculator slider ── */
+.roi-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.roi-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7c3aed;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.roi-slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 7px rgba(124, 58, 237, 0.2);
+  transform: scale(1.1);
+}
+
+.roi-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7c3aed;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+}
+
 /* ── Prose content ── */
 .prose-dark h2 {
   font-size: 1.875rem;

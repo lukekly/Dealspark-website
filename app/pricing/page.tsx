@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import AnimatedSection from '@/components/AnimatedSection';
+import ROICalculator from '@/components/ROICalculator';
 
 const CALENDLY = 'https://calendly.com/dealspark/strategy-call';
 
@@ -186,6 +187,17 @@ export default function PricingPage() {
             </AnimatedSection>
           ))}
         </div>
+      </section>
+
+      {/* ── ROI Calculator ── */}
+      <section className="max-w-2xl mx-auto px-6 lg:px-8 py-8">
+        <AnimatedSection delay={0}>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Work out the numbers</h2>
+            <p className="text-white/50">Plug in your deal size and close rate to see what the pipeline is worth.</p>
+          </div>
+          <ROICalculator />
+        </AnimatedSection>
       </section>
 
       {/* ── What's included ── */}
