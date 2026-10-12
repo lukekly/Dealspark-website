@@ -87,11 +87,11 @@ export default function PricingPage() {
           <AnimatedSection delay={0}>
             <span className="section-label mb-6">Transparent Pricing</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mt-6 mb-6 leading-[1.1]">
-              Know exactly what you are{' '}
-              <span className="gradient-text">getting into.</span>
+              Simple pricing.{' '}
+              <span className="gradient-text">Qualified meetings every month.</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-              No retainer arrangements that obscure what you are paying for. Here is exactly what DealSpark costs, what is included, and what to expect.
+              One monthly fee covers everything — target lists, cold calling, email follow-up, and a full market report. Meetings delivered to your calendar. Nothing else to manage.
             </p>
           </AnimatedSection>
         </div>
