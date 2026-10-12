@@ -59,7 +59,7 @@ const overviewLog: CallEntry[] = [
   { id: 205, contact: 'Emma Gallagher',    phone: '+353 555 099 456', company: 'Vertex AI',         title: 'Chief Revenue Officer',         disposition: 'not-interested', duration: '1m 42s' },
   { id: 204, contact: 'Claire Doyle',      phone: '+353 555 031 620', company: 'Novex Systems',     title: 'VP Sales & Partnerships',       disposition: 'future-opp',     duration: '1m 52s' },
   { id: 203, contact: 'Patrick Dunne',     phone: '+353 555 071 983', company: 'Harbour Analytics', title: 'Head of Sales',                 disposition: 'no-answer',      duration: '9s' },
-  { id: 202, contact: 'Tom Reilly',        phone: '+353 555 058 147', company: 'Clearpath Software','title': 'Chief Revenue Officer',       disposition: 'referral',       duration: '2m 19s' },
+  { id: 202, contact: 'Tom Reilly',        phone: '+353 555 058 147', company: 'Clearpath Software', title: 'Chief Revenue Officer',        disposition: 'referral',       duration: '2m 19s' },
   { id: 201, contact: 'Rachel Byrne',      phone: '+353 555 024 509', company: 'Meridian Group',    title: 'Head of Business Development',  disposition: 'meeting-set',    duration: '3m 48s' },
 ];
 
@@ -117,20 +117,21 @@ function Badge({ d }: { d: Disposition }) {
 }
 
 function NotesPanel({ notes }: { notes: NonNullable<CallEntry['notes']> }) {
+  const items: { label: string; text: string }[] = [
+    { label: 'OUTCOME',              text: notes.outcome },
+    { label: 'SPOKE WITH',           text: notes.spokeWith },
+    { label: 'KEY INTEL',            text: notes.keyIntel },
+    ...(notes.objections           ? [{ label: 'OBJECTIONS',           text: notes.objections }]           : []),
+    { label: 'NEXT STEPS',           text: notes.nextSteps },
+    ...(notes.competitorMentions   ? [{ label: 'COMPETITOR MENTIONS',  text: notes.competitorMentions }]   : []),
+  ];
   return (
     <div className="px-4 pb-4 pt-1">
       <div className="rounded-xl p-4 space-y-3 text-xs leading-relaxed" style={{ background: 'rgba(255,255,255,0.03)' }}>
-        {[
-          ['OUTCOME', notes.outcome],
-          ['SPOKE WITH', notes.spokeWith],
-          ['KEY INTEL', notes.keyIntel],
-          notes.objections ? ['OBJECTIONS', notes.objections] : null,
-          ['NEXT STEPS', notes.nextSteps],
-          notes.competitorMentions ? ['COMPETITOR MENTIONS', notes.competitorMentions] : null,
-        ].filter(Boolean).map(([label, text]) => (
-          <p key={label as string}>
+        {items.map(({ label, text }) => (
+          <p key={label}>
             <span className="text-white/30 font-semibold mr-2">{label}:</span>
-            <span className="text-white/60">{text as string}</span>
+            <span className="text-white/60">{text}</span>
           </p>
         ))}
       </div>
