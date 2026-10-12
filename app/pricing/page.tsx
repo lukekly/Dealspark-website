@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import AnimatedSection from '@/components/AnimatedSection';
 import ROICalculator from '@/components/ROICalculator';
-import PortalPreview from '@/components/PortalPreview';
 
 const CALENDLY = 'https://calendly.com/dealspark/strategy-call';
 
@@ -198,19 +197,6 @@ export default function PricingPage() {
             <p className="text-white/50">Plug in your deal size and close rate to see what the pipeline is worth.</p>
           </div>
           <ROICalculator />
-        </AnimatedSection>
-      </section>
-
-      {/* ── Portal preview ── */}
-      <section className="max-w-4xl mx-auto px-6 lg:px-8 py-8">
-        <AnimatedSection delay={0}>
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Your live client portal</h2>
-            <p className="text-white/50 max-w-xl mx-auto">
-              Every conversation logged. AI summary on every call. Full market intelligence — who said what, what competitors came up, what the next step is.
-            </p>
-          </div>
-          <PortalPreview />
         </AnimatedSection>
       </section>
 

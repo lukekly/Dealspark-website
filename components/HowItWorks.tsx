@@ -1,4 +1,5 @@
 import AnimatedSection from './AnimatedSection';
+import PortalPreview from './PortalPreview';
 
 const steps = [
   {
@@ -92,6 +93,24 @@ export default function HowItWorks() {
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Portal preview */}
+        <AnimatedSection delay={0} className="mt-20">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+              Everything logged. Nothing hidden.
+            </h3>
+            <p className="text-white/50 max-w-xl mx-auto mb-4">
+              Every conversation, outcome, and piece of market intelligence is recorded and available to you in real time.
+            </p>
+            <span className="inline-flex items-center gap-2 text-xs text-accent/80 border border-accent/20 bg-accent/[0.07] rounded-full px-4 py-1.5 font-medium">
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-.75 3.5h1.5v4.5h-1.5V7z"/></svg>
+              Interactive — click the tabs to explore your client dashboard
+            </span>
+          </div>
+          <PortalPreview />
+        </AnimatedSection>
+
       </div>
     </section>
   );
