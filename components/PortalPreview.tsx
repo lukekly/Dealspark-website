@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 
 type Disposition =
   | 'no-answer'
@@ -303,54 +303,63 @@ export default function PortalPreview() {
       {/* ── CONVERSATIONS TAB ── */}
       {tab === 'conversations' && (
         <div className="overflow-x-auto">
-        <div className="divide-y divide-white/[0.05] min-w-[560px]">
-          {conversationGroups.map(group => (
-            <div key={group.label}>
-              {/* Group header */}
-              <div className="px-5 py-3 flex items-center gap-2">
-                <div className={`w-2 h-full self-stretch rounded-full ${CIRCLE[group.label] ?? 'bg-white/20'}`} style={{ minHeight: '18px' }} />
-                <span className="text-white/70 text-xs font-bold uppercase tracking-widest">{group.label}</span>
-                <span className="text-white/30 text-xs ml-1">{group.count}</span>
-              </div>
-
-              {/* Rows */}
-              {group.entries.map(row => (
-                <div key={row.id} className="border-t border-white/[0.04]">
-                  <div
-                    className={`flex items-center gap-3 px-5 py-3 cursor-pointer transition-colors duration-150 ${row.notes ? 'hover:bg-white/[0.02]' : ''}`}
-                    onClick={() => row.notes && toggle(row.id)}
-                  >
-                    <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0 ${CIRCLE[group.label] ?? 'bg-white/20'}`}>
-                      {row.id % 100 < 10 ? row.id % 10 : String(row.id).slice(-2)}
-                    </div>
-                    <div className="flex-1 min-w-0 grid grid-cols-1 sm:grid-cols-[1fr_1fr_1fr_auto_auto_auto] gap-x-4 items-center">
-                      <div className="hidden sm:block text-white/30 text-xs">{row.date}</div>
-                      <div>
-                        <p className="text-white/80 text-xs font-medium truncate">{row.contact}</p>
-                        <p className="text-white/25 text-xs">{row.phone}</p>
+          <table className="w-full text-xs min-w-[580px]">
+            <tbody>
+              {conversationGroups.map(group => (
+                <Fragment key={group.label}>
+                  <tr className="border-t border-white/[0.05]">
+                    <td colSpan={7} className="px-5 py-3">
+                      <div className="flex items-center gap-2">
+                        <div className={`w-2 h-4 rounded-full shrink-0 ${CIRCLE[group.label] ?? 'bg-white/20'}`} />
+                        <span className="text-white/70 font-bold uppercase tracking-widest">{group.label}</span>
+                        <span className="text-white/30 ml-1">{group.count}</span>
                       </div>
-                      <p className="hidden sm:block text-white/50 text-xs truncate">{row.company}</p>
-                      <p className="hidden sm:block text-white/35 text-xs truncate">{row.title}</p>
-                      <Badge d={row.disposition} />
-                      <div className="hidden sm:flex items-center gap-2">
-                        <span className="text-white/30 text-xs font-mono">{row.duration}</span>
-                        {row.notes && (
-                          <svg
-                            className={`w-3.5 h-3.5 text-white/30 transition-transform duration-200 ${expanded === row.id ? 'rotate-180' : ''}`}
-                            viewBox="0 0 16 16" fill="currentColor"
-                          >
-                            <path d="M8 10L3 5h10l-5 5z"/>
-                          </svg>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                  {row.notes && expanded === row.id && <NotesPanel notes={row.notes} />}
-                </div>
+                    </td>
+                  </tr>
+                  {group.entries.map(row => (
+                    <Fragment key={row.id}>
+                      <tr
+                        className={`border-t border-white/[0.04] transition-colors duration-150 ${row.notes ? 'cursor-pointer hover:bg-white/[0.02]' : ''}`}
+                        onClick={() => row.notes && toggle(row.id)}
+                      >
+                        <td className="pl-5 pr-2 py-3 w-10">
+                          <div className={`w-7 h-7 rounded-full flex items-center justify-center font-bold text-white shrink-0 ${CIRCLE[group.label] ?? 'bg-white/20'}`}>
+                            {row.id % 100 < 10 ? row.id % 10 : String(row.id).slice(-2)}
+                          </div>
+                        </td>
+                        <td className="px-2 py-3 text-white/30 whitespace-nowrap">{row.date}</td>
+                        <td className="px-2 py-3">
+                          <p className="text-white/80 font-medium">{row.contact}</p>
+                          <p className="text-white/25 mt-0.5">{row.phone}</p>
+                        </td>
+                        <td className="px-2 py-3 text-white/50 whitespace-nowrap">{row.company}</td>
+                        <td className="px-2 py-3 text-white/35 whitespace-nowrap">{row.title}</td>
+                        <td className="px-2 py-3"><Badge d={row.disposition} /></td>
+                        <td className="px-2 pr-5 py-3">
+                          <div className="flex items-center gap-2">
+                            <span className="text-white/30 font-mono whitespace-nowrap">{row.duration}</span>
+                            {row.notes && (
+                              <svg
+                                className={`w-3.5 h-3.5 text-white/30 transition-transform duration-200 ${expanded === row.id ? 'rotate-180' : ''}`}
+                                viewBox="0 0 16 16" fill="currentColor"
+                              >
+                                <path d="M8 10L3 5h10l-5 5z"/>
+                              </svg>
+                            )}
+                          </div>
+                        </td>
+                      </tr>
+                      {row.notes && expanded === row.id && (
+                        <tr>
+                          <td colSpan={7}><NotesPanel notes={row.notes} /></td>
+                        </tr>
+                      )}
+                    </Fragment>
+                  ))}
+                </Fragment>
               ))}
-            </div>
-          ))}
-        </div>
+            </tbody>
+          </table>
         </div>
       )}
 
