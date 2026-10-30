@@ -2,8 +2,12 @@
 
 import { useState } from 'react';
 
-const TIER_COSTS: Record<number, number> = { 4: 3000, 5: 3600, 6: 4250 };
-const TIER_NAMES: Record<number, string> = { 4: 'Starter', 5: 'Growth', 6: 'Partner' };
+// 4–6 meetings is the Starter plan; 7–10 is Growth.
+function planFor(meetings: number) {
+  return meetings <= 6
+    ? { name: 'Starter', cost: 3_500 }
+    : { name: 'Growth', cost: 5_500 };
+}
 
 function fmt(n: number): string {
   if (n >= 1_000_000) return `€${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1)}M`;
@@ -58,10 +62,9 @@ function Slider({ label, value, min, max, step, display, minLabel, maxLabel, onC
 export default function ROICalculator() {
   const [acv, setAcv] = useState(25_000);
   const [winRate, setWinRate] = useState(20);
-  const [meetings, setMeetings] = useState(5);
+  const [meetings, setMeetings] = useState(8);
 
-  const tierCost = TIER_COSTS[meetings] ?? 3_600;
-  const tierName = TIER_NAMES[meetings] ?? 'Growth';
+  const { name: tierName, cost: tierCost } = planFor(meetings);
 
   const monthlyPipeline = acv * meetings;
   const expectedMonthlyRevenue = monthlyPipeline * (winRate / 100);
@@ -106,11 +109,11 @@ export default function ROICalculator() {
             label="Meetings delivered per month"
             value={meetings}
             min={4}
-            max={6}
+            max={10}
             step={1}
             display={`${meetings}`}
             minLabel="4 / Starter"
-            maxLabel="6 / Partner"
+            maxLabel="10 / Growth"
             onChange={setMeetings}
           />
         </div>
@@ -137,7 +140,7 @@ export default function ROICalculator() {
           <div className="rounded-xl p-5 border border-accent/25 bg-accent/[0.07] flex items-center justify-between">
             <div>
               <p className="text-white/60 text-sm font-medium">Return on investment</p>
-              <p className="text-white/30 text-xs mt-0.5">{tierName} plan · €{(tierCost / 1_000).toFixed(tierCost % 1_000 === 0 ? 0 : 2)}k/mo</p>
+              <p className="text-white/30 text-xs mt-0.5">{tierName} plan · €{(tierCost / 1_000).toFixed(tierCost % 1_000 === 0 ? 0 : 1)}k/mo</p>
             </div>
             <p className="text-3xl font-bold gradient-text tabular-nums">{roiMultiple.toFixed(1)}×</p>
           </div>

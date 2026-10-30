@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimatedSection from '@/components/AnimatedSection';
 import ROICalculator from '@/components/ROICalculator';
+import PricingPlans from '@/components/PricingPlans';
 
 const CALENDLY = 'https://calendly.com/dealspark/strategy-call';
 
@@ -14,33 +15,6 @@ export const metadata: Metadata = {
     url: 'https://www.dealspark.io/pricing',
   },
 };
-
-const tiers = [
-  {
-    name: 'Starter',
-    monthly: '€3,000',
-    appointments: 4,
-    quarterly: 12,
-    description: 'Ideal for founder-led teams supplementing inbound and referrals with a consistent outbound channel.',
-    highlight: false,
-  },
-  {
-    name: 'Growth',
-    monthly: '€3,600',
-    appointments: 5,
-    quarterly: 15,
-    description: 'Built for companies with a full-time sales person handling inbound, referrals and structured outbound.',
-    highlight: true,
-  },
-  {
-    name: 'Partner',
-    monthly: '€4,250',
-    appointments: 6,
-    quarterly: 18,
-    description: 'For teams running active pipelines who need consistent, high-quality new opportunity flow every quarter.',
-    highlight: false,
-  },
-];
 
 const features = [
   {
@@ -69,12 +43,6 @@ const features = [
   },
 ];
 
-const CheckIcon = () => (
-  <svg className="check-icon w-4 h-4 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-    <path d="M6.5 11.5L3 8l1.5-1.5 2 2 5-5L13 5l-6.5 6.5z" />
-  </svg>
-);
-
 export default function PricingPage() {
   return (
     <main className="pt-24 pb-20">
@@ -97,97 +65,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* ── Capacity framing ── */}
-      <section className="max-w-3xl mx-auto px-6 lg:px-8 pt-4 pb-8">
-        <AnimatedSection delay={100}>
-          <p className="text-center text-white/40 text-xs font-semibold uppercase tracking-widest mb-6">
-            How many active deals can you manage each quarter?
-          </p>
-          <div className="grid grid-cols-3 gap-3 sm:gap-4">
-            {tiers.map((tier) => (
-              <div
-                key={tier.name}
-                className={`text-center rounded-2xl p-5 border ${
-                  tier.highlight
-                    ? 'border-accent/40 bg-accent/10'
-                    : 'border-white/[0.06] bg-surface'
-                }`}
-              >
-                <p className={`text-3xl sm:text-4xl font-bold mb-1 ${tier.highlight ? 'gradient-text' : 'text-white'}`}>
-                  {tier.quarterly}
-                </p>
-                <p className="text-white/40 text-xs sm:text-sm">per quarter</p>
-                <p className="text-white/50 text-xs sm:text-sm mt-1">{tier.appointments}/month</p>
-              </div>
-            ))}
-          </div>
-        </AnimatedSection>
-      </section>
-
-      {/* ── Pricing cards ── */}
-      <section className="max-w-5xl mx-auto px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {tiers.map((tier, i) => (
-            <AnimatedSection key={tier.name} delay={i * 80}>
-              <div
-                className={`relative flex flex-col h-full rounded-2xl p-8 border ${
-                  tier.highlight
-                    ? 'border-accent/50 bg-gradient-to-b from-accent/10 to-surface'
-                    : 'card-static'
-                }`}
-              >
-                {tier.highlight && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="section-label text-xs">Most Popular</span>
-                  </div>
-                )}
-                <div className="mb-5">
-                  <h2 className="text-xl font-bold text-white mb-2">{tier.name}</h2>
-                  <p className="text-white/50 text-sm leading-relaxed">{tier.description}</p>
-                </div>
-                <div className="mb-7">
-                  <p className={`text-4xl font-bold ${tier.highlight ? 'gradient-text' : 'text-white'}`}>
-                    {tier.monthly}
-                  </p>
-                  <p className="text-white/40 text-sm mt-1">per month</p>
-                </div>
-                <ul className="mb-8 space-y-3 flex-1">
-                  <li className="flex items-start gap-3">
-                    <CheckIcon />
-                    <span className="text-white/70 text-sm">
-                      <strong className="text-white font-semibold">{tier.appointments} qualified appointments</strong> per month
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon />
-                    <span className="text-white/70 text-sm">Prospect research &amp; target lists</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon />
-                    <span className="text-white/70 text-sm">Cold calling &amp; campaign setup</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon />
-                    <span className="text-white/70 text-sm">Email follow-up</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon />
-                    <span className="text-white/70 text-sm">Monthly performance report</span>
-                  </li>
-                </ul>
-                <a
-                  href={CALENDLY}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={tier.highlight ? 'btn-primary w-full justify-center' : 'btn-outline w-full justify-center'}
-                >
-                  Book a Call
-                </a>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
-      </section>
+      <PricingPlans />
 
       {/* ── ROI Calculator ── */}
       <section className="max-w-2xl mx-auto px-6 lg:px-8 py-8">
