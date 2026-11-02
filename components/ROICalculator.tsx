@@ -6,7 +6,7 @@ import { useState } from 'react';
 function planFor(meetings: number) {
   return meetings <= 6
     ? { name: 'Starter', cost: 3_500 }
-    : { name: 'Growth', cost: 5_500 };
+    : { name: 'Growth', cost: 6_000 };
 }
 
 function fmt(n: number): string {

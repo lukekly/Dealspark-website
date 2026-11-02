@@ -38,7 +38,7 @@ const tiers: Tier[] = [
     name: 'Growth',
     quarterly: '24–30',
     perMonth: '8–10/month',
-    price: '€5,500',
+    price: '€6,000',
     priceNote: 'per month',
     appointments: '8–10 qualified appointments',
     description: 'For teams with a salesperson in place who need more pipeline than inbound and referrals can deliver.',
