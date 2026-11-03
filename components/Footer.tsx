@@ -34,6 +34,9 @@ export default function Footer() {
             <Link href="/contact" className="text-sm text-white/50 hover:text-white transition-colors">
               Contact
             </Link>
+            <Link href="/cost-of-hiring-an-sdr" className="text-sm text-white/50 hover:text-white transition-colors">
+              In-house vs outsourced SDR
+            </Link>
             <Link href="/privacy" className="text-sm text-white/50 hover:text-white transition-colors">
               Privacy and Cookie Policy
             </Link>

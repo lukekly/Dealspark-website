@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 import ROICalculator from '@/components/ROICalculator';
 import PricingPlans from '@/components/PricingPlans';
@@ -75,6 +76,26 @@ export default function PricingPage() {
             <p className="text-white/50">Plug in your deal size and close rate to see what the pipeline is worth.</p>
           </div>
           <ROICalculator />
+        </AnimatedSection>
+      </section>
+
+      {/* ── Hire vs outsource teaser ── */}
+      <section className="max-w-2xl mx-auto px-6 lg:px-8 py-4">
+        <AnimatedSection delay={0}>
+          <div className="rounded-2xl border border-accent/25 bg-accent/[0.07] p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-lg font-bold text-white mb-1">Thinking of hiring an SDR instead?</h2>
+              <p className="text-white/55 text-sm leading-relaxed">
+                A year-one SDR hire costs around €100k before they&apos;re fully productive.
+              </p>
+            </div>
+            <Link
+              href="/cost-of-hiring-an-sdr"
+              className="text-[#a78bfa] hover:text-white font-semibold text-sm whitespace-nowrap transition-colors"
+            >
+              See the full breakdown →
+            </Link>
+          </div>
         </AnimatedSection>
       </section>
 

@@ -35,6 +35,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     { url: `${BASE}/services`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/pricing`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    {
+      url: `${BASE}/cost-of-hiring-an-sdr`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
     { url: `${BASE}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.2 },
   ];
 
