@@ -60,7 +60,7 @@ export default function PricingPage() {
               <span className="gradient-text">Qualified meetings every month.</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-              One monthly fee covers everything — target lists, cold calling, email follow-up, and a full market report. Meetings delivered to your calendar. Nothing else to manage.
+              One monthly fee covers everything: target lists, cold calling, email follow-up, and a full market report. Meetings delivered to your calendar. Nothing else to manage.
             </p>
           </AnimatedSection>
         </div>
