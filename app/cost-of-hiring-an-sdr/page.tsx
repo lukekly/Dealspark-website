@@ -32,7 +32,7 @@ const MARKETS = [
     flag: 'Ireland',
     h: "You're hiring against big tech",
     items: [
-      ['A small talent pool.', "Dublin's experienced SDRs get a steady stream of offers from the big tech companies based here, many paying €70–80k on-target earnings for language roles."],
+      ['A small talent pool.', "Dublin's experienced SDRs get a steady stream of offers from the big tech companies based here, many paying €70–80k on-target earnings for English-speaking and language roles alike."],
       ['Employer PRSI is 11.4%', 'since October 2026, on top of salary and commission.'],
       ['Pension auto-enrolment', 'started in January 2026. Employers pay 1.5% now, rising to 6% by 2035.'],
       ['A small market remembers.', "Burn through your best prospects with a weak pitch and there's no next list to move on to."],
