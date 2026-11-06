@@ -308,10 +308,6 @@ export default function SDRCostCalculator() {
                   <p className="text-xl font-bold gradient-text tabular-nums">{fmt(dsMonthly, cur)}/mo</p>
                 </div>
               </div>
-
-              <p className="text-white/35 text-xs leading-relaxed">
-                Commission is counted at target. Ramp months aren&apos;t added on top, because that salary is already in the total. They show up in the cost per productive month instead.
-              </p>
             </div>
           </div>
         </div>
